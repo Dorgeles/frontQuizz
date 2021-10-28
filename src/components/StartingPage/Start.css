@@ -1,0 +1,11 @@
+.icon-img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+.notifierN{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
