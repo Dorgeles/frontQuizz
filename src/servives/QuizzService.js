@@ -9,12 +9,13 @@ class QuizzService {
     }
 
     playQuizz({objectQuestion, objectReponse, objectPlayer}){
-        return axios.post(GameR,
-            {
-                quizz:objectQuestion,
-                response:objectReponse,
-                player: objectPlayer
-            })
+        const data = {
+            quizz:objectQuestion,
+            response:objectReponse,
+            player: objectPlayer
+        }
+        console.log(data)
+        // return axios.post(GameR,{})
     }
 }
 

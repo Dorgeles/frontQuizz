@@ -17,6 +17,7 @@ const Quizz = () => {
     }, []);
     const handleAnswerOptionClick = (answerOption) =>{
         if (answerOption) {
+            QuizzService.playQuizz(question, answerOption)
 			console.log(answerOption);
 		}
 
@@ -24,9 +25,7 @@ const Quizz = () => {
 
     return (
         <div className='app'>
-         
             { question.responses != null &&  <>
-                 
                     <div className='question-section'>
                     <div className='question-count'>
                         <span>{question.title}</span> 
